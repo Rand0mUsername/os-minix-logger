@@ -1,3 +1,5 @@
+tmp/
+
 # Binary artifacts.
 *.o
 *.a
@@ -92,3 +94,5 @@ src/minix/servers/rs/rs
 src/minix/servers/sched/sched
 src/minix/servers/vfs/vfs
 src/minix/servers/vm/vm
+
+*.pico
