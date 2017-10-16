@@ -33,6 +33,7 @@ SRCS+=  \
 	kprintf.c \
 	kputc.c \
 	kputs.c \
+        lgs.c \
 	mapdriver.c \
 	optset.c \
 	panic.c \

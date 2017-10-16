@@ -32,3 +32,6 @@ void rproc_dmp(void);
 
 /* dmp_ds.c */
 void data_store_dmp(void);
+
+/* dmp_lgs.c */
+void loggers_dmp(void);

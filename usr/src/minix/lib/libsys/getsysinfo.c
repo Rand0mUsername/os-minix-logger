@@ -20,6 +20,7 @@ int getsysinfo(
   case VFS_PROC_NR: call_nr = VFS_GETSYSINFO; break;
   case RS_PROC_NR: call_nr = RS_GETSYSINFO; break;
   case DS_PROC_NR: call_nr = DS_GETSYSINFO; break;
+  case LGS_PROC_NR: call_nr = LGS_GETSYSINFO; break;
   default:
 	return ENOSYS;
   }

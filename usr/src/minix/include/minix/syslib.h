@@ -275,5 +275,12 @@ int copyfd(endpoint_t endpt, int fd, int what);
 #define COPYFD_TO	1	/* copy file descriptor to remote process */
 #define COPYFD_CLOSE	2	/* close file descriptor in remote process */
 
+/* Logger server */
+int start_log(char* logger);
+int set_logger_level(char* logger, int level);
+int write_log(char* logger, char* msg, int message_level);
+int close_log(char* logger);
+int clear_logs(char* logger);
+
 #endif /* _SYSLIB_H */
 

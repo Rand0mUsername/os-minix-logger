@@ -2024,6 +2024,15 @@ typedef struct {
 _ASSERT_MSG_SIZE(mess_vmmcp_reply);
 
 typedef struct {
+    char logger[32];
+    vir_bytes msg_loc;
+    int msg_len;
+    int  level;
+    uint8_t padding[12];
+} mess_lgs;
+_ASSERT_MSG_SIZE(mess_lgs);
+
+typedef struct {
 	endpoint_t m_source;		/* who sent the message */
 	int m_type;			/* what kind of message is it */
 	union {
@@ -2251,6 +2260,7 @@ typedef struct {
 		mess_vm_vfs_mmap	m_vm_vfs_mmap;
 		mess_vmmcp		m_vmmcp;
 		mess_vmmcp_reply	m_vmmcp_reply;
+                mess_lgs                m_lgs;
 
 		u8_t size[56];	/* message payload may have 56 bytes at most */
 	};
